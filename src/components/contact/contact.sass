@@ -1,0 +1,101 @@
+@import "../../styles/App.sass"
+
+.contact
+  input,
+  textarea,
+  button
+    margin-bottom: $content-spacing
+
+  button
+    border: 1px solid #333
+    margin-top: -.6rem
+    padding: 10px 25px
+    color: $white
+
+    &:hover
+      border: 1px solid #888
+
+  input
+    background-color: $black
+    color: $white
+    width: 100%
+    max-width: 570px
+    height: 45px
+    border: 0px
+    padding: 0 15px
+    border-bottom: 1px solid #333
+    outline: none
+    transition: all 0.3s ease-in-out
+
+    &:active,
+    &:focus,
+    &:hover
+      border-bottom: 1px solid #888
+
+  textarea
+    background-color: $black
+    color: $white
+    width: 100%
+    max-width: 570px
+    padding: 15px
+    border: 1px solid #333
+    outline: none
+    transition: all 0.3s ease-in-out
+
+    &:active,
+    &:focus,
+    &:hover
+      border: 1px solid #888
+  
+  ::placeholder
+    color: $white
+
+.send-button
+  width: 84px
+  background-color: black
+  border: 1px solid #333
+  cursor: pointer
+  padding: 9px 0
+
+  .loading
+    margin: 0 auto
+    width: 20px
+    height: 20px
+    color: $white
+    position: relative
+    display: inline-block
+    border: 3px solid
+    border-radius: 50%
+    border-top-color: transparent
+    animation: rotate 1s linear infinite
+
+    @keyframes rotate
+      0%
+        transform: rotate(0)
+
+      100%
+        transform: rotate(360deg)
+
+.socials
+  display: block
+  font-family: $serif
+  font-size: 2.4rem
+
+  h4
+    padding: $content-spacing 0
+
+  li
+    padding-bottom: $content-spacing
+
+  a
+    color: $white
+
+    &:hover
+      color: $grey
+
+@media screen and (max-width: 990px)
+  .contact
+    text-align: center
+
+    button
+      margin: 0 auto $content-spacing auto

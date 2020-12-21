@@ -1,0 +1,31 @@
+@import "../../styles/App.sass"
+
+.home
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  h1
+    font-size: 22rem
+    line-height: 22rem
+    text-transform: uppercase
+    text-align: center
+
+@media screen and (max-width: 1080px)
+  .home
+    h1
+      font-size: 18rem
+      line-height: 19rem
+
+@media screen and (max-width: 700px)
+  .home
+    h1
+      font-size: 9rem
+      line-height: 10rem
+
+@media screen and (max-width: 500px)
+  .home
+    h1
+      margin-top: -5rem

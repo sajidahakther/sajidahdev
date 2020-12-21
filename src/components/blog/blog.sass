@@ -1,0 +1,52 @@
+@import '../../styles/App.sass'
+
+.blog
+  background-color: $white
+  color: $black
+
+
+  &__box
+    color: $white
+    background: $black
+    width: 100%
+    min-height: 460px
+    position: relative
+    margin-bottom: $content-spacing
+
+  &__image
+    width: 100%
+    height: auto
+    position: relative
+    img
+      width: 100%
+      height: auto
+
+  &__info
+    padding: 1.5rem 1.5rem 2rem 1.5rem
+    font-size: 1.4rem
+    line-height: 2.2rem
+
+    h4
+      font-size: 2.2rem
+      margin-bottom: 1.5rem
+
+    p
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+      overflow: hidden
+      text-overflow: ellipsis
+      height: 62px
+      color: $grey
+      font-size: inherit
+      line-height: inherit
+      margin-bottom: $content-spacing
+    
+  &__link
+    border-bottom: 1px solid $grey
+    padding-bottom: 3px
+    color: $white
+
+    &:hover
+      color: $grey
+

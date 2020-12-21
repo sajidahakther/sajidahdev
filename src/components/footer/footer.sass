@@ -1,0 +1,47 @@
+@import '../../styles/App.sass'
+
+.footer
+  background: #000
+  width: 100%
+  min-height: $section-spacing
+
+  .footer-box
+    min-height: $section-spacing
+    display: flex
+    align-items: center
+
+    p
+      color: $white
+      font-size: 1.1rem
+
+  .back-to-top
+    float: right
+    cursor: pointer
+    img
+      margin-left: 10px
+
+  .back-to-top:hover
+    p
+      color: $grey
+
+@media screen and (max-width: 580px)
+  .footer
+    min-height: 120px
+    .footer-box
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      min-height: 120px
+      img
+        padding-bottom: 30px
+
+    .back-to-top
+      display: none
+      justify-content: center
+      align-items: center
+      float: none
+      flex-direction: row
+
+      img
+        padding-bottom: 0px
