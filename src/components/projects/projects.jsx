@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-flexbox-grid";
 import Masonry from "react-masonry-css";
 import Preview1 from "../../assets/projects/project01/preview.png";
-import Preview2 from "../../assets/projects/project02/preview.png";
+import Preview2 from "../../assets/projects/project02/preview.gif";
 import Preview3 from "../../assets/projects/project03/preview.png";
 import Preview4 from "../../assets/projects/project04/preview.png";
 import Preview5 from "../../assets/projects/project05/preview.png";
